@@ -4,10 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// var Router = require('react-router')
+// var Login = require('./login')
+// var auth = require('./auth')
+
+// function requireAuth(nextState, replace) {
+//     if (!auth.loggedIn()) {
+//         replace({ 
+//             pathname:'/App/login/',
+//             state: {nextPathname: '/App/'}
+//         })
+//     }
+// }
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  // <Router.Router history={Router.browserHistory}>
+  //       <Router.Route path='/App/login/' component={Login} />
+  //       <Router.Route path='/App/' component={App} onEnter={requireAuth} />
+  //   </Router.Router>,
   document.getElementById('root')
 );
 
