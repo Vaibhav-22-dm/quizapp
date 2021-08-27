@@ -36,7 +36,7 @@ const Login = () => {
             else{
                 localStorage.setItem('token', res.data['token'])
             }
-            if(res.data['token']) history.push('dashboard/');
+            if(res.data['token']) history.push('/quizapp/dashboard/');
         })
 
     }
