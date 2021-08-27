@@ -61,7 +61,7 @@ const Login = () => {
                     <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
                         Login
                     </button>
-                    <Link type="submit" className="btn btn-warning mx-2" to='/register' >
+                    <Link type="submit" className="btn btn-warning mx-2" to='/quizapp/register' >
                         Register
                     </Link>
                     {!token && 
