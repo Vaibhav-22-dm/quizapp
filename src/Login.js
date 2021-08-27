@@ -36,7 +36,7 @@ const Login = () => {
             else{
                 localStorage.setItem('token', res.data['token'])
             }
-            if(res.data['token']) history.push('dashboard/');
+            if(res.data['token']) history.push('/quizapp/dashboard/');
         })
 
     }
@@ -61,7 +61,7 @@ const Login = () => {
                     <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
                         Login
                     </button>
-                    <Link type="submit" className="btn btn-warning mx-2" to='/register' >
+                    <Link type="submit" className="btn btn-warning mx-2" to='/quizapp/register' >
                         Register
                     </Link>
                     {!token && 

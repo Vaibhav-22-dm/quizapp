@@ -15,16 +15,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/quizapp/">
             <Login />
           </Route>
-          <Route exact path="/quiz/:id">
+          <Route exact path="/quizapp/quiz/:id">
             <Quiz />
           </Route>
-          <Route exact path="/dashboard">
+          <Route exact path="/quizapp/dashboard">
             <Dashboard />
           </Route>
-          <Route exact path="/register">
+          <Route exact path="/quizapp/register">
             <Register />
           </Route>
         </Switch>

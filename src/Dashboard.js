@@ -66,7 +66,7 @@ const Dashboard = () => {
     const logout = () => {
         console.log('logged out')
         localStorage.removeItem('token')
-        window.location.href = 'http://127.0.0.1:3000/'
+        window.location.href = 'https://vaibhav-22-dm.github.io/quizapp/'
     }
 
     if(token==null){
@@ -143,7 +143,7 @@ const Dashboard = () => {
                                         {test.subject=='M' && <div>Mathematics</div>}
                                         {test.subject=='B' && <div>Biology</div>}
                                         <div>{test.time} minutes</div>
-                                        <Link className="btn btn-info mt-3" to={`/quiz/${test.id}`}>Start</Link>
+                                        <Link className="btn btn-info mt-3" to={`/quizapp/quiz/${test.id}`}>Start</Link>
                                     </div>
                                 </div>
                             )}
