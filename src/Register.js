@@ -110,7 +110,7 @@ const Register = () => {
                         <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
                             Register
                         </button>
-                        <Link type="submit" className="btn btn-warning mx-2" to='/' >
+                        <Link type="submit" className="btn btn-warning mx-2" to='/quizapp/' >
                             Login
                         </Link>
                     </div>
